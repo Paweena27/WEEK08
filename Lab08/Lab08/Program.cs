@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace Lab08
 {
@@ -7,6 +7,17 @@ namespace Lab08
     {
         static void Main(string[] args)
         {
+            Queue<string> queue1 = new Queue<string>();
+            queue1.Enqueue("RED");
+            queue1.Enqueue("BLUE");
+            queue1.Enqueue("YELLOW");
+            queue1.Enqueue("GREEN");
+
+            Console.WriteLine("The elements in the queue are:" + queue1.Count);
+            queue1.Clear();
+            Console.WriteLine("The elements in the queue are after the clearmethod: " + queue1.Count);
+            Console.ReadLine();
+
         }
     }
 }
